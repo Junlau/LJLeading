@@ -22,6 +22,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         textFrameArray = [NSMutableArray array];
+        //不设置影响很大，文字输出会比较模糊
+        self.layer.contentsScale = [UIScreen mainScreen].scale;
     }
     
     return self;
@@ -46,7 +48,8 @@
 //    
 //    //直接绘制，YYLabel采用layer层绘制，实现异步绘制
 //    
-//    
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    [self drawTextAndImage:context size:self.bounds.size];
 //    
 //}
 
@@ -77,6 +80,8 @@
     unichar placeHolder = 0xFFFC;
     NSString *placeHolderString = [NSString stringWithCharacters:&placeHolder length:1];
     NSMutableAttributedString *placeHolderAttributedString = [[NSMutableAttributedString alloc]initWithString:placeHolderString];
+    
+    
     
     //设置placeHolderAttributedString的Attributes 两种方式，通过Attributes判断是不是图片
     //1
@@ -215,6 +220,12 @@ CGFloat widthCallbacks (void *ref) {
     // Divide the columns equally across the frame's width.
     CGFloat columnWidth = CGRectGetWidth(self.bounds) / columnCount;
     for (column = 0; column < columnCount - 1; column++) {
+        /*CGRectDivide这个函数的功能很简单，就是将一个 CGRect 切割成两个 CGRect ；其中， rect 参数是你要切分的对象； slice 是一个指向切出的 CGRect 的指针； remainder 是指向切割后剩下的 CGRect 的指针； amount 是你要切割的大小；最后一个参数 edge 是一个枚举值，代表 amount 开始计算的方向，假设 amount 为 10.0 那么：
+        
+        CGRectMinXEdge 代表在 rect 从左往右数 10 个单位开始切割
+        CGRectMaxXEdge 代表在 rect 从右往左数 10 个单位开始切割
+        CGRectMinYEdge 代表在 rect 从上往下数 10 个单位开始切割
+        CGRectMaxYEdge 代表在 rect 从下往上数 10 个单位开始切割*/
         CGRectDivide(columnRects[column], &columnRects[column],
                      &columnRects[column + 1], columnWidth, CGRectMinXEdge);
     }
@@ -242,7 +253,7 @@ CGFloat widthCallbacks (void *ref) {
 // Override drawRect: to draw the attributed string into columns.
 // (In OS X, the drawRect: method of NSView takes an NSRect parameter,
 //  but that parameter is not used in this listing.)
-- (void)drawRect:(CGRect)rect
+/*- (void)drawRect:(CGRect)rect
 {
     // Initialize a graphics context in iOS.
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -288,7 +299,7 @@ CGFloat widthCallbacks (void *ref) {
     }
     CFRelease(columnPaths);
     CFRelease(framesetter);
-}
+}*/
 
 
 
