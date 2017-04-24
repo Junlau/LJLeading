@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DateCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="109" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="109" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar-15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsS-Br-Rwf">
+                        <rect key="frame" x="0.0" y="0.0" width="109" height="50"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SsS-Br-Rwf" secondAttribute="trailing" id="478-q8-wJG"/>
+                <constraint firstItem="SsS-Br-Rwf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cgz-Kl-Vev"/>
+                <constraint firstAttribute="bottom" secondItem="SsS-Br-Rwf" secondAttribute="bottom" id="FVo-ZE-Sdz"/>
+                <constraint firstItem="SsS-Br-Rwf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LBk-Pa-iDn"/>
+            </constraints>
+            <size key="customSize" width="109" height="50"/>
+            <connections>
+                <outlet property="dateLabel" destination="SsS-Br-Rwf" id="geR-h0-KqY"/>
+            </connections>
+            <point key="canvasLocation" x="63.5" y="80"/>
+        </collectionViewCell>
+    </objects>
+</document>

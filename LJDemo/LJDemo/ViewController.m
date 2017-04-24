@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LJCoreTextViewController.h"
 #import "LJCoreTextAsyncViewController.h"
+#import "LJCollectionViewController.h"
 
 @interface ViewController ()
 
@@ -34,7 +35,7 @@
 #pragma mark - UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -50,6 +51,8 @@
         cell.textLabel.text = @"CoreText";
     }else if (indexPath.row == 1) {
         cell.textLabel.text = @"CoreTextAsync";
+    }else if (indexPath.row == 2) {
+        cell.textLabel.text = @"CollectionView";
     }
     return cell;
 }
@@ -62,6 +65,9 @@
     }else if (indexPath.row == 1) {
         LJCoreTextAsyncViewController *async = [[LJCoreTextAsyncViewController alloc]init];
         [self.navigationController pushViewController:async animated:YES];
+    }else if (indexPath.row == 2) {
+        LJCollectionViewController *collection = [[LJCollectionViewController alloc]init];
+        [self.navigationController pushViewController:collection animated:YES];
     }
 }
 

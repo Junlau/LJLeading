@@ -18,6 +18,12 @@
 		DD120A5B1E7A279500B984FA /* LJCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A5A1E7A279500B984FA /* LJCoreTextViewController.m */; };
 		DD120A5E1E7A29A700B984FA /* LJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A5D1E7A29A700B984FA /* LJTextView.m */; };
 		DD120A611E7A2D2000B984FA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD120A601E7A2D2000B984FA /* CoreText.framework */; };
+		DD45FD9C1EA893BB0037018A /* LJCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD45FD9A1EA893BB0037018A /* LJCollectionViewController.m */; };
+		DD45FDA01EA895880037018A /* LJCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DD45FD9F1EA895880037018A /* LJCustomCollectionViewLayout.m */; };
+		DD45FDA41EA89A190037018A /* ContentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD45FDA21EA89A190037018A /* ContentCollectionViewCell.m */; };
+		DD45FDA51EA89A190037018A /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD45FDA31EA89A190037018A /* ContentCollectionViewCell.xib */; };
+		DD45FDA91EA89A3A0037018A /* DateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD45FDA71EA89A3A0037018A /* DateCollectionViewCell.m */; };
+		DD45FDAA1EA89A3A0037018A /* DateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD45FDA81EA89A3A0037018A /* DateCollectionViewCell.xib */; };
 		DD55D35B1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD55D35A1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m */; };
 		DDBC2B291E8B843200F87088 /* LJTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBC2B281E8B843200F87088 /* LJTextLayout.m */; };
 /* End PBXBuildFile section */
@@ -61,6 +67,16 @@
 		DD120A5C1E7A29A700B984FA /* LJTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTextView.h; sourceTree = "<group>"; };
 		DD120A5D1E7A29A700B984FA /* LJTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTextView.m; sourceTree = "<group>"; };
 		DD120A601E7A2D2000B984FA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DD45FD991EA893BB0037018A /* LJCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCollectionViewController.h; sourceTree = "<group>"; };
+		DD45FD9A1EA893BB0037018A /* LJCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCollectionViewController.m; sourceTree = "<group>"; };
+		DD45FD9E1EA895880037018A /* LJCustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCustomCollectionViewLayout.h; sourceTree = "<group>"; };
+		DD45FD9F1EA895880037018A /* LJCustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCustomCollectionViewLayout.m; sourceTree = "<group>"; };
+		DD45FDA11EA89A190037018A /* ContentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionViewCell.h; sourceTree = "<group>"; };
+		DD45FDA21EA89A190037018A /* ContentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewCell.m; sourceTree = "<group>"; };
+		DD45FDA31EA89A190037018A /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentCollectionViewCell.xib; sourceTree = "<group>"; };
+		DD45FDA61EA89A3A0037018A /* DateCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCollectionViewCell.h; sourceTree = "<group>"; };
+		DD45FDA71EA89A3A0037018A /* DateCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCollectionViewCell.m; sourceTree = "<group>"; };
+		DD45FDA81EA89A3A0037018A /* DateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCollectionViewCell.xib; sourceTree = "<group>"; };
 		DD55D3591E8D0033007B4F32 /* LJCoreTextAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCoreTextAsyncViewController.h; sourceTree = "<group>"; };
 		DD55D35A1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCoreTextAsyncViewController.m; sourceTree = "<group>"; };
 		DDBC2B271E8B843200F87088 /* LJTextLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTextLayout.h; sourceTree = "<group>"; };
@@ -117,6 +133,7 @@
 		DD120A241E7A250600B984FA /* LJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DD45FD981EA893860037018A /* CollectionView */,
 				DD120A581E7A253B00B984FA /* CoreText */,
 				DD120A281E7A250600B984FA /* AppDelegate.h */,
 				DD120A291E7A250600B984FA /* AppDelegate.m */,
@@ -178,6 +195,23 @@
 				DD120A601E7A2D2000B984FA /* CoreText.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD45FD981EA893860037018A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DD45FD991EA893BB0037018A /* LJCollectionViewController.h */,
+				DD45FD9A1EA893BB0037018A /* LJCollectionViewController.m */,
+				DD45FD9E1EA895880037018A /* LJCustomCollectionViewLayout.h */,
+				DD45FD9F1EA895880037018A /* LJCustomCollectionViewLayout.m */,
+				DD45FDA11EA89A190037018A /* ContentCollectionViewCell.h */,
+				DD45FDA21EA89A190037018A /* ContentCollectionViewCell.m */,
+				DD45FDA31EA89A190037018A /* ContentCollectionViewCell.xib */,
+				DD45FDA61EA89A3A0037018A /* DateCollectionViewCell.h */,
+				DD45FDA71EA89A3A0037018A /* DateCollectionViewCell.m */,
+				DD45FDA81EA89A3A0037018A /* DateCollectionViewCell.xib */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,8 +321,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD45FDAA1EA89A3A0037018A /* DateCollectionViewCell.xib in Resources */,
 				DD120A351E7A250700B984FA /* LaunchScreen.storyboard in Resources */,
 				DD120A321E7A250700B984FA /* Assets.xcassets in Resources */,
+				DD45FDA51EA89A190037018A /* ContentCollectionViewCell.xib in Resources */,
 				DD120A301E7A250600B984FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,12 +350,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD45FD9C1EA893BB0037018A /* LJCollectionViewController.m in Sources */,
+				DD45FDA01EA895880037018A /* LJCustomCollectionViewLayout.m in Sources */,
 				DD55D35B1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m in Sources */,
 				DD120A5B1E7A279500B984FA /* LJCoreTextViewController.m in Sources */,
 				DD120A2D1E7A250600B984FA /* ViewController.m in Sources */,
 				DDBC2B291E8B843200F87088 /* LJTextLayout.m in Sources */,
+				DD45FDA91EA89A3A0037018A /* DateCollectionViewCell.m in Sources */,
 				DD120A2A1E7A250600B984FA /* AppDelegate.m in Sources */,
 				DD120A271E7A250600B984FA /* main.m in Sources */,
+				DD45FDA41EA89A190037018A /* ContentCollectionViewCell.m in Sources */,
 				DD120A5E1E7A29A700B984FA /* LJTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
