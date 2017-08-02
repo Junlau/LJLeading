@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LJHashViewController">
+            <connections>
+                <outlet property="desLabel" destination="Mr5-oP-lxv" id="WJE-Bb-faF"/>
+                <outlet property="normalLabel" destination="JdN-89-ZJt" id="pWM-0g-ldL"/>
+                <outlet property="textField" destination="zdW-Ei-MED" id="BbW-61-bJY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入0-100的数字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdW-Ei-MED">
+                    <rect key="frame" x="16" y="100" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sm-TC-s90">
+                    <rect key="frame" x="165" y="162" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="jIf-6e-d6k"/>
+                        <constraint firstAttribute="width" constant="44" id="tq0-PU-wiR"/>
+                    </constraints>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="comfirmButtonPressed:" destination="-1" eventType="touchUpInside" id="t6Y-EU-bBW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mr5-oP-lxv">
+                    <rect key="frame" x="16" y="230" width="343" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdN-89-ZJt">
+                    <rect key="frame" x="16" y="250" width="343" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JdN-89-ZJt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="5TQ-hm-GVK"/>
+                <constraint firstItem="Mr5-oP-lxv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Gcc-yY-URS"/>
+                <constraint firstAttribute="trailing" secondItem="Mr5-oP-lxv" secondAttribute="trailing" constant="16" id="HWh-EG-Zs6"/>
+                <constraint firstItem="JdN-89-ZJt" firstAttribute="top" secondItem="Mr5-oP-lxv" secondAttribute="bottom" constant="20" id="HnG-vh-6TV"/>
+                <constraint firstItem="zdW-Ei-MED" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="REX-qh-gfm"/>
+                <constraint firstAttribute="trailing" secondItem="JdN-89-ZJt" secondAttribute="trailing" constant="16" id="SLk-qO-MI8"/>
+                <constraint firstAttribute="trailing" secondItem="zdW-Ei-MED" secondAttribute="trailing" constant="16" id="UMs-PJ-QX6"/>
+                <constraint firstItem="Mr5-oP-lxv" firstAttribute="top" secondItem="4Sm-TC-s90" secondAttribute="bottom" constant="24" id="V0X-GA-fVI"/>
+                <constraint firstItem="4Sm-TC-s90" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WIi-hM-BFc"/>
+                <constraint firstItem="4Sm-TC-s90" firstAttribute="top" secondItem="zdW-Ei-MED" secondAttribute="bottom" constant="32" id="XIe-vX-lID"/>
+                <constraint firstItem="zdW-Ei-MED" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="fVj-iM-6Vj"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="76.5"/>
+        </view>
+    </objects>
+</document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0C2CD41EBC1F9700FF1947 /* LJSecondScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */; };
+		DD0C2CD71EBC6F3200FF1947 /* LJDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD61EBC6F3200FF1947 /* LJDynamicItem.m */; };
 		DD120A271E7A250600B984FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A261E7A250600B984FA /* main.m */; };
 		DD120A2A1E7A250600B984FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A291E7A250600B984FA /* AppDelegate.m */; };
 		DD120A2D1E7A250600B984FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A2C1E7A250600B984FA /* ViewController.m */; };
@@ -18,6 +20,18 @@
 		DD120A5B1E7A279500B984FA /* LJCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A5A1E7A279500B984FA /* LJCoreTextViewController.m */; };
 		DD120A5E1E7A29A700B984FA /* LJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A5D1E7A29A700B984FA /* LJTextView.m */; };
 		DD120A611E7A2D2000B984FA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD120A601E7A2D2000B984FA /* CoreText.framework */; };
+		DD21E9021EB192420006DB6E /* SwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD21E9011EB192420006DB6E /* SwipeUpInteractiveTransition.m */; };
+		DD21E9051EB198D90006DB6E /* NormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD21E9041EB198D90006DB6E /* NormalDismissAnimation.m */; };
+		DD21E9091EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD21E9081EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.m */; };
+		DD21E90E1EB1EE8B0006DB6E /* LJCollectionTranViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD21E90D1EB1EE8B0006DB6E /* LJCollectionTranViewController.m */; };
+		DD21E9121EB1F33A0006DB6E /* LJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD21E9101EB1F33A0006DB6E /* LJCollectionViewCell.m */; };
+		DD21E9131EB1F33A0006DB6E /* LJCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD21E9111EB1F33A0006DB6E /* LJCollectionViewCell.xib */; };
+		DD21E9181EB1F72F0006DB6E /* LJMagicMoveAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD21E9171EB1F72F0006DB6E /* LJMagicMoveAnimation.m */; };
+		DD21E91C1EB1F9330006DB6E /* LJTranSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD21E91A1EB1F9330006DB6E /* LJTranSecondViewController.m */; };
+		DD21E91D1EB1F9330006DB6E /* LJTranSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD21E91B1EB1F9330006DB6E /* LJTranSecondViewController.xib */; };
+		DD21E9201EB2E1590006DB6E /* LJMagicMovePopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD21E91F1EB2E1590006DB6E /* LJMagicMovePopAnimation.m */; };
+		DD34B5C61EB9D7B9006FFE93 /* LJHashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD34B5C41EB9D7B9006FFE93 /* LJHashViewController.m */; };
+		DD34B5C71EB9D7B9006FFE93 /* LJHashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD34B5C51EB9D7B9006FFE93 /* LJHashViewController.xib */; };
 		DD45FD9C1EA893BB0037018A /* LJCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD45FD9A1EA893BB0037018A /* LJCollectionViewController.m */; };
 		DD45FDA01EA895880037018A /* LJCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DD45FD9F1EA895880037018A /* LJCustomCollectionViewLayout.m */; };
 		DD45FDA41EA89A190037018A /* ContentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD45FDA21EA89A190037018A /* ContentCollectionViewCell.m */; };
@@ -25,7 +39,11 @@
 		DD45FDA91EA89A3A0037018A /* DateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD45FDA71EA89A3A0037018A /* DateCollectionViewCell.m */; };
 		DD45FDAA1EA89A3A0037018A /* DateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD45FDA81EA89A3A0037018A /* DateCollectionViewCell.xib */; };
 		DD55D35B1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD55D35A1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m */; };
+		DDB533381EBAC92000CC9B8E /* LJScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB533371EBAC92000CC9B8E /* LJScrollViewController.m */; };
 		DDBC2B291E8B843200F87088 /* LJTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBC2B281E8B843200F87088 /* LJTextLayout.m */; };
+		DDEC4D1C1EB091B4003AD964 /* LJModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEC4D1B1EB091B4003AD964 /* LJModalViewController.m */; };
+		DDEC4D1F1EB09239003AD964 /* LJMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEC4D1E1EB09239003AD964 /* LJMainViewController.m */; };
+		DDEC4D221EB09A32003AD964 /* LJBouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEC4D211EB09A32003AD964 /* LJBouncePresentAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD0C2CD21EBC1F9700FF1947 /* LJSecondScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSecondScrollViewController.h; sourceTree = "<group>"; };
+		DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSecondScrollViewController.m; sourceTree = "<group>"; };
+		DD0C2CD51EBC6F3200FF1947 /* LJDynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDynamicItem.h; sourceTree = "<group>"; };
+		DD0C2CD61EBC6F3200FF1947 /* LJDynamicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJDynamicItem.m; sourceTree = "<group>"; };
 		DD120A221E7A250600B984FA /* LJDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD120A261E7A250600B984FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD120A281E7A250600B984FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +89,27 @@
 		DD120A5C1E7A29A700B984FA /* LJTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTextView.h; sourceTree = "<group>"; };
 		DD120A5D1E7A29A700B984FA /* LJTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTextView.m; sourceTree = "<group>"; };
 		DD120A601E7A2D2000B984FA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DD21E9001EB192420006DB6E /* SwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
+		DD21E9011EB192420006DB6E /* SwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
+		DD21E9031EB198D90006DB6E /* NormalDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalDismissAnimation.h; sourceTree = "<group>"; };
+		DD21E9041EB198D90006DB6E /* NormalDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDismissAnimation.m; sourceTree = "<group>"; };
+		DD21E9071EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeLeftInteractiveTransition.h; sourceTree = "<group>"; };
+		DD21E9081EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeLeftInteractiveTransition.m; sourceTree = "<group>"; };
+		DD21E90C1EB1EE8B0006DB6E /* LJCollectionTranViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCollectionTranViewController.h; sourceTree = "<group>"; };
+		DD21E90D1EB1EE8B0006DB6E /* LJCollectionTranViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCollectionTranViewController.m; sourceTree = "<group>"; };
+		DD21E90F1EB1F33A0006DB6E /* LJCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCollectionViewCell.h; sourceTree = "<group>"; };
+		DD21E9101EB1F33A0006DB6E /* LJCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCollectionViewCell.m; sourceTree = "<group>"; };
+		DD21E9111EB1F33A0006DB6E /* LJCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJCollectionViewCell.xib; sourceTree = "<group>"; };
+		DD21E9161EB1F72F0006DB6E /* LJMagicMoveAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMagicMoveAnimation.h; sourceTree = "<group>"; };
+		DD21E9171EB1F72F0006DB6E /* LJMagicMoveAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMagicMoveAnimation.m; sourceTree = "<group>"; };
+		DD21E9191EB1F9330006DB6E /* LJTranSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTranSecondViewController.h; sourceTree = "<group>"; };
+		DD21E91A1EB1F9330006DB6E /* LJTranSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTranSecondViewController.m; sourceTree = "<group>"; };
+		DD21E91B1EB1F9330006DB6E /* LJTranSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJTranSecondViewController.xib; sourceTree = "<group>"; };
+		DD21E91E1EB2E1590006DB6E /* LJMagicMovePopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMagicMovePopAnimation.h; sourceTree = "<group>"; };
+		DD21E91F1EB2E1590006DB6E /* LJMagicMovePopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMagicMovePopAnimation.m; sourceTree = "<group>"; };
+		DD34B5C31EB9D7B9006FFE93 /* LJHashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHashViewController.h; sourceTree = "<group>"; };
+		DD34B5C41EB9D7B9006FFE93 /* LJHashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHashViewController.m; sourceTree = "<group>"; };
+		DD34B5C51EB9D7B9006FFE93 /* LJHashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJHashViewController.xib; sourceTree = "<group>"; };
 		DD45FD991EA893BB0037018A /* LJCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCollectionViewController.h; sourceTree = "<group>"; };
 		DD45FD9A1EA893BB0037018A /* LJCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCollectionViewController.m; sourceTree = "<group>"; };
 		DD45FD9E1EA895880037018A /* LJCustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCustomCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -79,8 +122,16 @@
 		DD45FDA81EA89A3A0037018A /* DateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCollectionViewCell.xib; sourceTree = "<group>"; };
 		DD55D3591E8D0033007B4F32 /* LJCoreTextAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCoreTextAsyncViewController.h; sourceTree = "<group>"; };
 		DD55D35A1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCoreTextAsyncViewController.m; sourceTree = "<group>"; };
+		DDB533361EBAC92000CC9B8E /* LJScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJScrollViewController.h; sourceTree = "<group>"; };
+		DDB533371EBAC92000CC9B8E /* LJScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJScrollViewController.m; sourceTree = "<group>"; };
 		DDBC2B271E8B843200F87088 /* LJTextLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTextLayout.h; sourceTree = "<group>"; };
 		DDBC2B281E8B843200F87088 /* LJTextLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTextLayout.m; sourceTree = "<group>"; };
+		DDEC4D1A1EB091B4003AD964 /* LJModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJModalViewController.h; sourceTree = "<group>"; };
+		DDEC4D1B1EB091B4003AD964 /* LJModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJModalViewController.m; sourceTree = "<group>"; };
+		DDEC4D1D1EB09239003AD964 /* LJMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMainViewController.h; sourceTree = "<group>"; };
+		DDEC4D1E1EB09239003AD964 /* LJMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMainViewController.m; sourceTree = "<group>"; };
+		DDEC4D201EB09A32003AD964 /* LJBouncePresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBouncePresentAnimation.h; sourceTree = "<group>"; };
+		DDEC4D211EB09A32003AD964 /* LJBouncePresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBouncePresentAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +184,10 @@
 		DD120A241E7A250600B984FA /* LJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DDB533351EBAC8F400CC9B8E /* ScrollViewInScrollView */,
+				DD34B5C21EB9D791006FFE93 /* HashTable */,
+				DD21E90B1EB1E6950006DB6E /* CollectionViewTransitioning */,
+				DDEC4D191EB09123003AD964 /* VCTransitioning */,
 				DD45FD981EA893860037018A /* CollectionView */,
 				DD120A581E7A253B00B984FA /* CoreText */,
 				DD120A281E7A250600B984FA /* AppDelegate.h */,
@@ -197,6 +252,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD21E90B1EB1E6950006DB6E /* CollectionViewTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				DD21E90C1EB1EE8B0006DB6E /* LJCollectionTranViewController.h */,
+				DD21E90D1EB1EE8B0006DB6E /* LJCollectionTranViewController.m */,
+				DD21E90F1EB1F33A0006DB6E /* LJCollectionViewCell.h */,
+				DD21E9101EB1F33A0006DB6E /* LJCollectionViewCell.m */,
+				DD21E9111EB1F33A0006DB6E /* LJCollectionViewCell.xib */,
+				DD21E9161EB1F72F0006DB6E /* LJMagicMoveAnimation.h */,
+				DD21E9171EB1F72F0006DB6E /* LJMagicMoveAnimation.m */,
+				DD21E91E1EB2E1590006DB6E /* LJMagicMovePopAnimation.h */,
+				DD21E91F1EB2E1590006DB6E /* LJMagicMovePopAnimation.m */,
+				DD21E9191EB1F9330006DB6E /* LJTranSecondViewController.h */,
+				DD21E91A1EB1F9330006DB6E /* LJTranSecondViewController.m */,
+				DD21E91B1EB1F9330006DB6E /* LJTranSecondViewController.xib */,
+			);
+			path = CollectionViewTransitioning;
+			sourceTree = "<group>";
+		};
+		DD34B5C21EB9D791006FFE93 /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+				DD34B5C31EB9D7B9006FFE93 /* LJHashViewController.h */,
+				DD34B5C41EB9D7B9006FFE93 /* LJHashViewController.m */,
+				DD34B5C51EB9D7B9006FFE93 /* LJHashViewController.xib */,
+			);
+			path = HashTable;
+			sourceTree = "<group>";
+		};
 		DD45FD981EA893860037018A /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +296,38 @@
 				DD45FDA81EA89A3A0037018A /* DateCollectionViewCell.xib */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DDB533351EBAC8F400CC9B8E /* ScrollViewInScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				DDB533361EBAC92000CC9B8E /* LJScrollViewController.h */,
+				DDB533371EBAC92000CC9B8E /* LJScrollViewController.m */,
+				DD0C2CD21EBC1F9700FF1947 /* LJSecondScrollViewController.h */,
+				DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */,
+				DD0C2CD51EBC6F3200FF1947 /* LJDynamicItem.h */,
+				DD0C2CD61EBC6F3200FF1947 /* LJDynamicItem.m */,
+			);
+			path = ScrollViewInScrollView;
+			sourceTree = "<group>";
+		};
+		DDEC4D191EB09123003AD964 /* VCTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC4D1D1EB09239003AD964 /* LJMainViewController.h */,
+				DDEC4D1E1EB09239003AD964 /* LJMainViewController.m */,
+				DDEC4D1A1EB091B4003AD964 /* LJModalViewController.h */,
+				DDEC4D1B1EB091B4003AD964 /* LJModalViewController.m */,
+				DDEC4D201EB09A32003AD964 /* LJBouncePresentAnimation.h */,
+				DDEC4D211EB09A32003AD964 /* LJBouncePresentAnimation.m */,
+				DD21E9001EB192420006DB6E /* SwipeUpInteractiveTransition.h */,
+				DD21E9011EB192420006DB6E /* SwipeUpInteractiveTransition.m */,
+				DD21E9031EB198D90006DB6E /* NormalDismissAnimation.h */,
+				DD21E9041EB198D90006DB6E /* NormalDismissAnimation.m */,
+				DD21E9071EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.h */,
+				DD21E9081EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.m */,
+			);
+			path = VCTransitioning;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +397,7 @@
 				TargetAttributes = {
 					DD120A211E7A250600B984FA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2TSBF48NQQ;
+						DevelopmentTeam = T427Y9B767;
 						ProvisioningStyle = Automatic;
 					};
 					DD120A3A1E7A250700B984FA = {
@@ -321,8 +437,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD21E91D1EB1F9330006DB6E /* LJTranSecondViewController.xib in Resources */,
 				DD45FDAA1EA89A3A0037018A /* DateCollectionViewCell.xib in Resources */,
+				DD34B5C71EB9D7B9006FFE93 /* LJHashViewController.xib in Resources */,
 				DD120A351E7A250700B984FA /* LaunchScreen.storyboard in Resources */,
+				DD21E9131EB1F33A0006DB6E /* LJCollectionViewCell.xib in Resources */,
 				DD120A321E7A250700B984FA /* Assets.xcassets in Resources */,
 				DD45FDA51EA89A190037018A /* ContentCollectionViewCell.xib in Resources */,
 				DD120A301E7A250600B984FA /* Main.storyboard in Resources */,
@@ -350,17 +469,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD21E9091EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.m in Sources */,
+				DDEC4D1C1EB091B4003AD964 /* LJModalViewController.m in Sources */,
 				DD45FD9C1EA893BB0037018A /* LJCollectionViewController.m in Sources */,
+				DDEC4D221EB09A32003AD964 /* LJBouncePresentAnimation.m in Sources */,
 				DD45FDA01EA895880037018A /* LJCustomCollectionViewLayout.m in Sources */,
+				DDEC4D1F1EB09239003AD964 /* LJMainViewController.m in Sources */,
 				DD55D35B1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m in Sources */,
+				DDB533381EBAC92000CC9B8E /* LJScrollViewController.m in Sources */,
 				DD120A5B1E7A279500B984FA /* LJCoreTextViewController.m in Sources */,
 				DD120A2D1E7A250600B984FA /* ViewController.m in Sources */,
+				DD21E9051EB198D90006DB6E /* NormalDismissAnimation.m in Sources */,
+				DD21E9021EB192420006DB6E /* SwipeUpInteractiveTransition.m in Sources */,
 				DDBC2B291E8B843200F87088 /* LJTextLayout.m in Sources */,
+				DD34B5C61EB9D7B9006FFE93 /* LJHashViewController.m in Sources */,
 				DD45FDA91EA89A3A0037018A /* DateCollectionViewCell.m in Sources */,
+				DD21E91C1EB1F9330006DB6E /* LJTranSecondViewController.m in Sources */,
 				DD120A2A1E7A250600B984FA /* AppDelegate.m in Sources */,
 				DD120A271E7A250600B984FA /* main.m in Sources */,
 				DD45FDA41EA89A190037018A /* ContentCollectionViewCell.m in Sources */,
+				DD21E9121EB1F33A0006DB6E /* LJCollectionViewCell.m in Sources */,
+				DD0C2CD41EBC1F9700FF1947 /* LJSecondScrollViewController.m in Sources */,
+				DD21E90E1EB1EE8B0006DB6E /* LJCollectionTranViewController.m in Sources */,
 				DD120A5E1E7A29A700B984FA /* LJTextView.m in Sources */,
+				DD21E9181EB1F72F0006DB6E /* LJMagicMoveAnimation.m in Sources */,
+				DD0C2CD71EBC6F3200FF1947 /* LJDynamicItem.m in Sources */,
+				DD21E9201EB2E1590006DB6E /* LJMagicMovePopAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2TSBF48NQQ;
+				DEVELOPMENT_TEAM = T427Y9B767;
 				INFOPLIST_FILE = LJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -520,7 +654,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2TSBF48NQQ;
+				DEVELOPMENT_TEAM = T427Y9B767;
 				INFOPLIST_FILE = LJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

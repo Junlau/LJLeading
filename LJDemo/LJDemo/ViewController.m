@@ -10,6 +10,10 @@
 #import "LJCoreTextViewController.h"
 #import "LJCoreTextAsyncViewController.h"
 #import "LJCollectionViewController.h"
+#import "LJMainViewController.h"
+#import "LJCollectionTranViewController.h"
+#import "LJHashViewController.h"
+#import "LJScrollViewController.h"
 
 @interface ViewController ()
 
@@ -35,7 +39,7 @@
 #pragma mark - UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 7;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -53,6 +57,14 @@
         cell.textLabel.text = @"CoreTextAsync";
     }else if (indexPath.row == 2) {
         cell.textLabel.text = @"CollectionView";
+    }else if (indexPath.row == 3) {
+        cell.textLabel.text = @"VCTransitioning";
+    }else if (indexPath.row == 4) {
+        cell.textLabel.text = @"CollectionViewTransitioning";
+    }else if (indexPath.row == 5) {
+        cell.textLabel.text = @"HashTable";
+    }else if (indexPath.row == 6) {
+        cell.textLabel.text = @"ScrollViewInScrollView";
     }
     return cell;
 }
@@ -68,7 +80,20 @@
     }else if (indexPath.row == 2) {
         LJCollectionViewController *collection = [[LJCollectionViewController alloc]init];
         [self.navigationController pushViewController:collection animated:YES];
+    }else if (indexPath.row == 3) {
+        LJMainViewController *collection = [[LJMainViewController alloc]init];
+        [self.navigationController pushViewController:collection animated:YES];
+    }else if (indexPath.row == 4) {
+        LJCollectionTranViewController *collection = [[LJCollectionTranViewController alloc]init];
+        [self.navigationController pushViewController:collection animated:YES];
+    }else if (indexPath.row == 5) {
+        LJHashViewController *hash = [[LJHashViewController alloc]init];
+        [self.navigationController pushViewController:hash animated:YES];
+    }else if (indexPath.row == 6) {
+        LJScrollViewController *scroll = [[LJScrollViewController alloc]init];
+        [self.navigationController pushViewController:scroll animated:YES];
     }
+
 }
 
 @end

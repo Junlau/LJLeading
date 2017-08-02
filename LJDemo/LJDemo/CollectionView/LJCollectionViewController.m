@@ -54,6 +54,7 @@
     
     self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, width, height - 64) collectionViewLayout:layout];
     self.collectionView.directionalLockEnabled = YES;
+    
     [self.collectionView registerNib:[UINib nibWithNibName:@"DateCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"DateCollectionViewCell"];
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"ContentCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"ContentCollectionViewCell"];

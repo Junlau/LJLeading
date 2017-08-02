@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LJCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="217" height="315"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="217" height="315"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CollectionImage" translatesAutoresizingMaskIntoConstraints="NO" id="4HQ-MI-xNb">
+                        <rect key="frame" x="0.0" y="0.0" width="217" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="XPK-BA-GAT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBY-CS-2nV">
+                        <rect key="frame" x="0.0" y="150" width="217" height="165"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZBY-CS-2nV" secondAttribute="trailing" id="8Aq-bn-EvP"/>
+                <constraint firstItem="ZBY-CS-2nV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Ro-zo-m1p"/>
+                <constraint firstItem="4HQ-MI-xNb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ldg-E5-qVc"/>
+                <constraint firstItem="ZBY-CS-2nV" firstAttribute="top" secondItem="4HQ-MI-xNb" secondAttribute="bottom" id="Y3G-Qd-n3x"/>
+                <constraint firstAttribute="trailing" secondItem="4HQ-MI-xNb" secondAttribute="trailing" id="alW-Gr-q1g"/>
+                <constraint firstAttribute="bottom" secondItem="ZBY-CS-2nV" secondAttribute="bottom" id="cyW-l5-Pe6"/>
+                <constraint firstItem="4HQ-MI-xNb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tth-np-KxU"/>
+            </constraints>
+            <size key="customSize" width="217" height="283"/>
+            <connections>
+                <outlet property="desLabel" destination="ZBY-CS-2nV" id="QaH-yp-8mo"/>
+                <outlet property="mainImageView" destination="4HQ-MI-xNb" id="GtV-8m-cDW"/>
+            </connections>
+            <point key="canvasLocation" x="-15.5" y="14.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CollectionImage" width="250" height="250"/>
+    </resources>
+</document>
