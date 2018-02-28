@@ -14,6 +14,7 @@
 #import "LJCollectionTranViewController.h"
 #import "LJHashViewController.h"
 #import "LJScrollViewController.h"
+#import "LJLoadViewController.h"
 
 @interface ViewController ()
 
@@ -39,7 +40,7 @@
 #pragma mark - UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 7;
+    return 8;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -65,6 +66,8 @@
         cell.textLabel.text = @"HashTable";
     }else if (indexPath.row == 6) {
         cell.textLabel.text = @"ScrollViewInScrollView";
+    }else if (indexPath.row == 7) {
+        cell.textLabel.text = @"Loading";
     }
     return cell;
 }
@@ -92,8 +95,10 @@
     }else if (indexPath.row == 6) {
         LJScrollViewController *scroll = [[LJScrollViewController alloc]init];
         [self.navigationController pushViewController:scroll animated:YES];
+    }else if (indexPath.row == 7) {
+        LJLoadViewController *load = [[LJLoadViewController alloc]init];
+        [self.navigationController pushViewController:load animated:YES];
     }
-
 }
 
 @end

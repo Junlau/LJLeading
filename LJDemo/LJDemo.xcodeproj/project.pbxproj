@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AD2F60E1F3441F000706241 /* LJLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2F60D1F3441F000706241 /* LJLoadViewController.m */; };
 		DD0C2CD41EBC1F9700FF1947 /* LJSecondScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */; };
 		DD0C2CD71EBC6F3200FF1947 /* LJDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD61EBC6F3200FF1947 /* LJDynamicItem.m */; };
 		DD120A271E7A250600B984FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A261E7A250600B984FA /* main.m */; };
@@ -64,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AD2F60C1F3441F000706241 /* LJLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJLoadViewController.h; sourceTree = "<group>"; };
+		2AD2F60D1F3441F000706241 /* LJLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJLoadViewController.m; sourceTree = "<group>"; };
 		DD0C2CD21EBC1F9700FF1947 /* LJSecondScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSecondScrollViewController.h; sourceTree = "<group>"; };
 		DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSecondScrollViewController.m; sourceTree = "<group>"; };
 		DD0C2CD51EBC6F3200FF1947 /* LJDynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDynamicItem.h; sourceTree = "<group>"; };
@@ -160,6 +163,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AD2F60B1F34416F00706241 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2F60C1F3441F000706241 /* LJLoadViewController.h */,
+				2AD2F60D1F3441F000706241 /* LJLoadViewController.m */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
 		DD120A191E7A250600B984FA = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +196,7 @@
 		DD120A241E7A250600B984FA /* LJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2AD2F60B1F34416F00706241 /* Loading */,
 				DDB533351EBAC8F400CC9B8E /* ScrollViewInScrollView */,
 				DD34B5C21EB9D791006FFE93 /* HashTable */,
 				DD21E90B1EB1E6950006DB6E /* CollectionViewTransitioning */,
@@ -478,6 +491,7 @@
 				DD55D35B1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m in Sources */,
 				DDB533381EBAC92000CC9B8E /* LJScrollViewController.m in Sources */,
 				DD120A5B1E7A279500B984FA /* LJCoreTextViewController.m in Sources */,
+				2AD2F60E1F3441F000706241 /* LJLoadViewController.m in Sources */,
 				DD120A2D1E7A250600B984FA /* ViewController.m in Sources */,
 				DD21E9051EB198D90006DB6E /* NormalDismissAnimation.m in Sources */,
 				DD21E9021EB192420006DB6E /* SwipeUpInteractiveTransition.m in Sources */,
