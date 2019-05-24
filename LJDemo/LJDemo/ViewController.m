@@ -15,6 +15,8 @@
 #import "LJHashViewController.h"
 #import "LJScrollViewController.h"
 #import "LJLoadViewController.h"
+#import "LJBezierViewController.h"
+#import "LJOperationViewController.h"
 
 @interface ViewController ()
 
@@ -40,7 +42,7 @@
 #pragma mark - UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 8;
+    return 10;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -68,6 +70,10 @@
         cell.textLabel.text = @"ScrollViewInScrollView";
     }else if (indexPath.row == 7) {
         cell.textLabel.text = @"Loading";
+    }else if (indexPath.row == 8) {
+        cell.textLabel.text = @"BezierPath";
+    }else if (indexPath.row == 9) {
+        cell.textLabel.text = @"Operation";
     }
     return cell;
 }
@@ -98,6 +104,12 @@
     }else if (indexPath.row == 7) {
         LJLoadViewController *load = [[LJLoadViewController alloc]init];
         [self.navigationController pushViewController:load animated:YES];
+    }else if (indexPath.row == 8) {
+        LJBezierViewController *bezier = [[LJBezierViewController alloc]init];
+        [self.navigationController pushViewController:bezier animated:YES];
+    }else if (indexPath.row == 9) {
+        LJOperationViewController *Operation = [[LJOperationViewController alloc]init];
+        [self.navigationController pushViewController:Operation animated:YES];
     }
 }
 
