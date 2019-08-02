@@ -61,6 +61,10 @@
 }
 */
 
+- (void)dealloc {
+    NSLog(@"11111");
+}
+
 #pragma mark <UICollectionViewDataSource>
 //section的数目
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {

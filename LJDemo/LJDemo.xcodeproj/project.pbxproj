@@ -11,6 +11,8 @@
 		2AD2F60E1F3441F000706241 /* LJLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2F60D1F3441F000706241 /* LJLoadViewController.m */; };
 		2AD87A6220E2224F001DC745 /* LJBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD87A6120E2224F001DC745 /* LJBezierViewController.m */; };
 		2AD87A6520E22620001DC745 /* LJPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD87A6420E22620001DC745 /* LJPathView.m */; };
+		2AF660CB22F144FD0041F0C1 /* LJLinkedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF660CA22F144FD0041F0C1 /* LJLinkedListViewController.m */; };
+		2AF660CE22F146110041F0C1 /* LinkedListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF660CD22F146110041F0C1 /* LinkedListModel.m */; };
 		DD0C2CD41EBC1F9700FF1947 /* LJSecondScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */; };
 		DD0C2CD71EBC6F3200FF1947 /* LJDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD61EBC6F3200FF1947 /* LJDynamicItem.m */; };
 		DD120A271E7A250600B984FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A261E7A250600B984FA /* main.m */; };
@@ -76,6 +78,10 @@
 		2AD87A6120E2224F001DC745 /* LJBezierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJBezierViewController.m; sourceTree = "<group>"; };
 		2AD87A6320E22620001DC745 /* LJPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJPathView.h; sourceTree = "<group>"; };
 		2AD87A6420E22620001DC745 /* LJPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJPathView.m; sourceTree = "<group>"; };
+		2AF660C922F144FD0041F0C1 /* LJLinkedListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJLinkedListViewController.h; sourceTree = "<group>"; };
+		2AF660CA22F144FD0041F0C1 /* LJLinkedListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJLinkedListViewController.m; sourceTree = "<group>"; };
+		2AF660CC22F146110041F0C1 /* LinkedListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListModel.h; sourceTree = "<group>"; };
+		2AF660CD22F146110041F0C1 /* LinkedListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedListModel.m; sourceTree = "<group>"; };
 		DD0C2CD21EBC1F9700FF1947 /* LJSecondScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSecondScrollViewController.h; sourceTree = "<group>"; };
 		DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSecondScrollViewController.m; sourceTree = "<group>"; };
 		DD0C2CD51EBC6F3200FF1947 /* LJDynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDynamicItem.h; sourceTree = "<group>"; };
@@ -201,6 +207,17 @@
 			path = BezierPath;
 			sourceTree = "<group>";
 		};
+		2AF660C522F13E0E0041F0C1 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				2AF660CC22F146110041F0C1 /* LinkedListModel.h */,
+				2AF660CD22F146110041F0C1 /* LinkedListModel.m */,
+				2AF660C922F144FD0041F0C1 /* LJLinkedListViewController.h */,
+				2AF660CA22F144FD0041F0C1 /* LJLinkedListViewController.m */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		DD120A191E7A250600B984FA = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +242,7 @@
 		DD120A241E7A250600B984FA /* LJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2AF660C522F13E0E0041F0C1 /* LinkedList */,
 				2ABA2B3B2297CE00000BB3E4 /* Operation */,
 				2AD87A5F20E221B4001DC745 /* BezierPath */,
 				2AD2F60B1F34416F00706241 /* Loading */,
@@ -461,6 +479,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -521,6 +540,7 @@
 				DD45FDA01EA895880037018A /* LJCustomCollectionViewLayout.m in Sources */,
 				DDEC4D1F1EB09239003AD964 /* LJMainViewController.m in Sources */,
 				DD55D35B1E8D0033007B4F32 /* LJCoreTextAsyncViewController.m in Sources */,
+				2AF660CE22F146110041F0C1 /* LinkedListModel.m in Sources */,
 				DDB533381EBAC92000CC9B8E /* LJScrollViewController.m in Sources */,
 				DD120A5B1E7A279500B984FA /* LJCoreTextViewController.m in Sources */,
 				2AD2F60E1F3441F000706241 /* LJLoadViewController.m in Sources */,
@@ -543,6 +563,7 @@
 				DD21E9181EB1F72F0006DB6E /* LJMagicMoveAnimation.m in Sources */,
 				DD0C2CD71EBC6F3200FF1947 /* LJDynamicItem.m in Sources */,
 				DD21E9201EB2E1590006DB6E /* LJMagicMovePopAnimation.m in Sources */,
+				2AF660CB22F144FD0041F0C1 /* LJLinkedListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,12 +710,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T427Y9B767;
 				INFOPLIST_FILE = LJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liujun.LJDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -702,12 +726,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T427Y9B767;
 				INFOPLIST_FILE = LJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liujun.LJDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
