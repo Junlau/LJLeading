@@ -115,8 +115,8 @@
         [self.navigationController pushViewController:Operation animated:YES];
     }else if (indexPath.row == 10) {
         //viewcontroller 在被 present 或者 push 出来之前，调用了 controller 持有的 view 的方法，就会触发 viewDidLoad
-        LJOperationViewController *Operation = [[LJOperationViewController alloc]init];
-        [self.navigationController pushViewController:Operation animated:YES];
+        LJLinkedListViewController *linkedList = [[LJLinkedListViewController alloc]init];
+        [self.navigationController pushViewController:linkedList animated:YES];
     }
 }
 

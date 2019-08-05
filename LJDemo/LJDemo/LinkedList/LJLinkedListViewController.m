@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self changeStringToCharArray:@"qwertyuioop"];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self changeStringToCharArray:@"qwertyuiopa"];
 }
 
 /*
@@ -32,13 +33,31 @@
 
 - (void)changeStringToCharArray:(NSString *)text {
     if (text.length > 0) {
-        char charArray[text.length];
-        for (int i = 0; i < text.length; i++) {
-            charArray[i] = [text characterAtIndex:i];
+        //将字符串转为字符数组
+        const char *charArray = [text UTF8String];
+        char *cpy = calloc([text length], 1);
+        strncpy(cpy, charArray, [text length]);
+        
+//        char charArray[text.length];
+//        for (int i = 0; i < text.length; i++) {
+//            charArray[i] = [text characterAtIndex:i];
+//        }
+        
+        //将字符数组前后倒置
+//        int count = (int)sizeof(cpy);
+        int count = (int)strlen(cpy);
+        for (int i = 0; i < count/2; i++) {
+            char temp = cpy[i];
+            cpy[i] = cpy[count - 1 - i];
+            cpy[count - 1 - i] = temp;
         }
-        for (int i = 0; i < sizeof(charArray); i++) {
-            NSLog(@"%c",charArray[i]);
-        }
+        
+        
+        
+        NSString *marketPacket = [NSString stringWithCString:cpy encoding:NSUTF8StringEncoding];
+        
+        NSLog(@"%@", marketPacket);
+        //未解决字符串中包括汉字的问题
     }
 }
 
