@@ -13,6 +13,7 @@
 		2AD87A6520E22620001DC745 /* LJPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD87A6420E22620001DC745 /* LJPathView.m */; };
 		2AF660CB22F144FD0041F0C1 /* LJLinkedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF660CA22F144FD0041F0C1 /* LJLinkedListViewController.m */; };
 		2AF660CE22F146110041F0C1 /* LinkedListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF660CD22F146110041F0C1 /* LinkedListModel.m */; };
+		4BF6AD0D233B4C14007E6994 /* LJProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6AD0C233B4C14007E6994 /* LJProxy.m */; };
 		DD0C2CD41EBC1F9700FF1947 /* LJSecondScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */; };
 		DD0C2CD71EBC6F3200FF1947 /* LJDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD61EBC6F3200FF1947 /* LJDynamicItem.m */; };
 		DD120A271E7A250600B984FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD120A261E7A250600B984FA /* main.m */; };
@@ -82,6 +83,8 @@
 		2AF660CA22F144FD0041F0C1 /* LJLinkedListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJLinkedListViewController.m; sourceTree = "<group>"; };
 		2AF660CC22F146110041F0C1 /* LinkedListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListModel.h; sourceTree = "<group>"; };
 		2AF660CD22F146110041F0C1 /* LinkedListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedListModel.m; sourceTree = "<group>"; };
+		4BF6AD0B233B4C14007E6994 /* LJProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJProxy.h; sourceTree = "<group>"; };
+		4BF6AD0C233B4C14007E6994 /* LJProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJProxy.m; sourceTree = "<group>"; };
 		DD0C2CD21EBC1F9700FF1947 /* LJSecondScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSecondScrollViewController.h; sourceTree = "<group>"; };
 		DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSecondScrollViewController.m; sourceTree = "<group>"; };
 		DD0C2CD51EBC6F3200FF1947 /* LJDynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDynamicItem.h; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 			children = (
 				2ABA2B3C2297CE41000BB3E4 /* LJOperationViewController.h */,
 				2ABA2B3D2297CE41000BB3E4 /* LJOperationViewController.m */,
+				4BF6AD0B233B4C14007E6994 /* LJProxy.h */,
+				4BF6AD0C233B4C14007E6994 /* LJProxy.m */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -459,7 +464,6 @@
 				TargetAttributes = {
 					DD120A211E7A250600B984FA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = T427Y9B767;
 						ProvisioningStyle = Automatic;
 					};
 					DD120A3A1E7A250700B984FA = {
@@ -533,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD21E9091EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.m in Sources */,
+				4BF6AD0D233B4C14007E6994 /* LJProxy.m in Sources */,
 				DDEC4D1C1EB091B4003AD964 /* LJModalViewController.m in Sources */,
 				DD45FD9C1EA893BB0037018A /* LJCollectionViewController.m in Sources */,
 				2AD87A6520E22620001DC745 /* LJPathView.m in Sources */,
@@ -712,7 +717,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T427Y9B767;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -728,7 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T427Y9B767;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

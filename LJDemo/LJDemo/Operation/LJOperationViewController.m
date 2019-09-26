@@ -7,6 +7,7 @@
 //
 
 #import "LJOperationViewController.h"
+#import "LJProxy.h"
 
 @interface LJModel : NSObject
 
@@ -61,23 +62,30 @@
     NSLog(@"%p",marray1.firstObject);
     NSLog(@"%p",marray2.firstObject);
     
-    //排序
-    [self bubbleSortMethod:[@[@4,@5,@1,@6,@8,@3,@2,@7] mutableCopy]];
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 70, 44)];
+    button.center = self.view.center;
+    [button addTarget:self action:@selector(changeViewColor) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
     
-    return;
+//    [self testProxy];
+    
+    //排序
+//    [self bubbleSortMethod:[@[@4,@5,@1,@6,@8,@3,@2,@7] mutableCopy]];
+    
+//    return;
     // 添加主线程runloop监听者
     [self addMainObserver];
     
     // 添加子线程runloop监听者
-    [self addOtherObserver];
+//    [self addOtherObserver];
     
     // 此处使用sleep是为了避免使用timer造成runloop的timer事件的干扰。
-    sleep(3);
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        CGFloat randomAlpha = (arc4random() % 100)*0.01;
-        [self.view setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:randomAlpha]];
-    });
+//    sleep(3);
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//
+//        CGFloat randomAlpha = (arc4random() % 100)*0.01;
+//        [self.view setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:randomAlpha]];
+//    });
     
 //    [self addOperationToQueue];
 }
@@ -111,6 +119,27 @@
     }
 }
 
+
+- (void)changeViewColor {
+    self.view.backgroundColor = [UIColor blueColor];
+}
+
+//NSProxy测试
+- (void)testProxy {
+    dispatch_semaphore_t sem = dispatch_semaphore_create(0);
+    
+    NSURL *url = [LJProxy proxyForObject:[NSURL URLWithString:@"https://www.google.com"]];
+    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        dispatch_semaphore_signal(sem);
+    }];
+    
+    [task resume];
+    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    
+    /*  NSObject寻找方法顺序：本类->父类->动态方法解析-> 消息转发；
+        NSproxy顺序：本类->消息转发；*/
+    
+}
 
 //runloop
 
@@ -166,31 +195,32 @@
 - (void)addMainObserver
 {
     CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopAllActivities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
-        
+        NSDate *date = [NSDate date];
+        NSTimeInterval currentTime= [date timeIntervalSince1970];
         switch (activity) {
                 
             case kCFRunLoopEntry:
-                NSLog(@"###cmm###进入kCFRunLoopEntry");
+                NSLog(@"###cmm###进入kCFRunLoopEntry -- %f",currentTime);
                 break;
                 
             case kCFRunLoopBeforeTimers:
-                NSLog(@"###cmm###即将处理Timer事件");
+                NSLog(@"###cmm###即将处理Timer事件 -- %f",currentTime);
                 break;
                 
             case kCFRunLoopBeforeSources:
-                NSLog(@"###cmm###即将处理Source事件");
+                NSLog(@"###cmm###即将处理Source事件 -- %f",currentTime);
                 break;
                 
             case kCFRunLoopBeforeWaiting:
-                NSLog(@"###cmm###即将休眠");
+                NSLog(@"###cmm###即将休眠 -- %f",currentTime);
                 break;
                 
             case kCFRunLoopAfterWaiting:
-                NSLog(@"###cmm###被唤醒");
+                NSLog(@"###cmm###被唤醒 -- %f",currentTime);
                 break;
                 
             case kCFRunLoopExit:
-                NSLog(@"###cmm###退出RunLoop");
+                NSLog(@"###cmm###退出RunLoop -- %f",currentTime);
                 break;
                 
             default:

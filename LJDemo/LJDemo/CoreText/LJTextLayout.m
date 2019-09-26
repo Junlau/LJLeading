@@ -57,6 +57,7 @@ static dispatch_queue_t LJTextAsyncLayerGetDisplayQueue() {
 - (int32_t)value {
     return _value;
 }
+//加 1
 - (int32_t)increase {
     return OSAtomicIncrement32(&_value);
 }
