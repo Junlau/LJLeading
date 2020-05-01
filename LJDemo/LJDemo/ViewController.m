@@ -18,6 +18,7 @@
 #import "LJBezierViewController.h"
 #import "LJOperationViewController.h"
 #import "LJLinkedListViewController.h"
+#import "TipsViewController.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) NSMutableArray *dataArray;
@@ -35,7 +36,7 @@
     self.tableView.dataSource = self;
     
     self.dataArray = [NSMutableArray array];
-    [self.dataArray addObjectsFromArray:@[@"CoreText",@"CoreTextAsync",@"CollectionView",@"VCTransitioning",@"CollectionViewTransitioning",@"HashTable",@"ScrollViewInScrollView",@"Loading",@"BezierPath",@"Operation",@"DataStructure"]];
+    [self.dataArray addObjectsFromArray:@[@"CoreText",@"CoreTextAsync",@"CollectionView",@"VCTransitioning",@"CollectionViewTransitioning",@"HashTable",@"ScrollViewInScrollView",@"Loading",@"BezierPath",@"Operation",@"DataStructure",@"TipsView"]];
     
    /*
     LLDB 汇编调试 使用符号断点进入汇编：
@@ -117,6 +118,10 @@
         //viewcontroller 在被 present 或者 push 出来之前，调用了 controller 持有的 view 的方法，就会触发 viewDidLoad
         LJLinkedListViewController *linkedList = [[LJLinkedListViewController alloc]init];
         [self.navigationController pushViewController:linkedList animated:YES];
+    }else if (indexPath.row == 11) {
+        TipsViewController *tipsVC = [[TipsViewController alloc]init];
+        tipsVC.maxNumber = 5;
+        [self.navigationController pushViewController:tipsVC animated:YES];
     }
 }
 

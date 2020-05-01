@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2ABA2B3E2297CE41000BB3E4 /* LJOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA2B3D2297CE41000BB3E4 /* LJOperationViewController.m */; };
+		2ACE5885245BEE2A00287BB7 /* TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACE5883245BEE2A00287BB7 /* TipsViewController.m */; };
+		2ACE5886245BEE2A00287BB7 /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE5884245BEE2A00287BB7 /* TipsViewController.xib */; };
 		2AD2F60E1F3441F000706241 /* LJLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2F60D1F3441F000706241 /* LJLoadViewController.m */; };
 		2AD87A6220E2224F001DC745 /* LJBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD87A6120E2224F001DC745 /* LJBezierViewController.m */; };
 		2AD87A6520E22620001DC745 /* LJPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD87A6420E22620001DC745 /* LJPathView.m */; };
@@ -73,6 +75,9 @@
 /* Begin PBXFileReference section */
 		2ABA2B3C2297CE41000BB3E4 /* LJOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJOperationViewController.h; sourceTree = "<group>"; };
 		2ABA2B3D2297CE41000BB3E4 /* LJOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJOperationViewController.m; sourceTree = "<group>"; };
+		2ACE5882245BEE2A00287BB7 /* TipsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipsViewController.h; sourceTree = "<group>"; };
+		2ACE5883245BEE2A00287BB7 /* TipsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsViewController.m; sourceTree = "<group>"; };
+		2ACE5884245BEE2A00287BB7 /* TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsViewController.xib; sourceTree = "<group>"; };
 		2AD2F60C1F3441F000706241 /* LJLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJLoadViewController.h; sourceTree = "<group>"; };
 		2AD2F60D1F3441F000706241 /* LJLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJLoadViewController.m; sourceTree = "<group>"; };
 		2AD87A6020E2224F001DC745 /* LJBezierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJBezierViewController.h; sourceTree = "<group>"; };
@@ -192,6 +197,16 @@
 			path = Operation;
 			sourceTree = "<group>";
 		};
+		2ACE5881245BED9300287BB7 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				2ACE5882245BEE2A00287BB7 /* TipsViewController.h */,
+				2ACE5883245BEE2A00287BB7 /* TipsViewController.m */,
+				2ACE5884245BEE2A00287BB7 /* TipsViewController.xib */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
 		2AD2F60B1F34416F00706241 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +262,7 @@
 		DD120A241E7A250600B984FA /* LJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2ACE5881245BED9300287BB7 /* Tips */,
 				2AF660C522F13E0E0041F0C1 /* LinkedList */,
 				2ABA2B3B2297CE00000BB3E4 /* Operation */,
 				2AD87A5F20E221B4001DC745 /* BezierPath */,
@@ -510,6 +526,7 @@
 				DD120A351E7A250700B984FA /* LaunchScreen.storyboard in Resources */,
 				DD21E9131EB1F33A0006DB6E /* LJCollectionViewCell.xib in Resources */,
 				DD120A321E7A250700B984FA /* Assets.xcassets in Resources */,
+				2ACE5886245BEE2A00287BB7 /* TipsViewController.xib in Resources */,
 				DD45FDA51EA89A190037018A /* ContentCollectionViewCell.xib in Resources */,
 				DD120A301E7A250600B984FA /* Main.storyboard in Resources */,
 			);
@@ -538,6 +555,7 @@
 			files = (
 				DD21E9091EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.m in Sources */,
 				4BF6AD0D233B4C14007E6994 /* LJProxy.m in Sources */,
+				2ACE5885245BEE2A00287BB7 /* TipsViewController.m in Sources */,
 				DDEC4D1C1EB091B4003AD964 /* LJModalViewController.m in Sources */,
 				DD45FD9C1EA893BB0037018A /* LJCollectionViewController.m in Sources */,
 				2AD87A6520E22620001DC745 /* LJPathView.m in Sources */,
