@@ -19,6 +19,7 @@
 #import "LJOperationViewController.h"
 #import "LJLinkedListViewController.h"
 #import "TipsViewController.h"
+#import "LJTimeEventViewController.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) NSMutableArray *dataArray;
@@ -36,7 +37,7 @@
     self.tableView.dataSource = self;
     
     self.dataArray = [NSMutableArray array];
-    [self.dataArray addObjectsFromArray:@[@"CoreText",@"CoreTextAsync",@"CollectionView",@"VCTransitioning",@"CollectionViewTransitioning",@"HashTable",@"ScrollViewInScrollView",@"Loading",@"BezierPath",@"Operation",@"DataStructure",@"TipsView"]];
+    [self.dataArray addObjectsFromArray:@[@"CoreText",@"CoreTextAsync",@"CollectionView",@"VCTransitioning",@"CollectionViewTransitioning",@"HashTable",@"ScrollViewInScrollView",@"Loading",@"BezierPath",@"Operation",@"DataStructure",@"TipsView",@"TimeEvent"]];
     
    /*
     LLDB 汇编调试 使用符号断点进入汇编：
@@ -122,6 +123,9 @@
         TipsViewController *tipsVC = [[TipsViewController alloc]init];
         tipsVC.maxNumber = 5;
         [self.navigationController pushViewController:tipsVC animated:YES];
+    }else if (indexPath.row == 12) {
+        LJTimeEventViewController *timeVC = [[LJTimeEventViewController alloc]init];
+        [self.navigationController pushViewController:timeVC animated:YES];
     }
 }
 

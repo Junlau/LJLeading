@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AACB54324839F7300C7949D /* LJTimeEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AACB54224839F7300C7949D /* LJTimeEventViewController.m */; };
 		2ABA2B3E2297CE41000BB3E4 /* LJOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA2B3D2297CE41000BB3E4 /* LJOperationViewController.m */; };
 		2ACE5885245BEE2A00287BB7 /* TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACE5883245BEE2A00287BB7 /* TipsViewController.m */; };
 		2ACE5886245BEE2A00287BB7 /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE5884245BEE2A00287BB7 /* TipsViewController.xib */; };
@@ -73,6 +74,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AACB54124839F7300C7949D /* LJTimeEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJTimeEventViewController.h; sourceTree = "<group>"; };
+		2AACB54224839F7300C7949D /* LJTimeEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJTimeEventViewController.m; sourceTree = "<group>"; };
 		2ABA2B3C2297CE41000BB3E4 /* LJOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJOperationViewController.h; sourceTree = "<group>"; };
 		2ABA2B3D2297CE41000BB3E4 /* LJOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJOperationViewController.m; sourceTree = "<group>"; };
 		2ACE5882245BEE2A00287BB7 /* TipsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipsViewController.h; sourceTree = "<group>"; };
@@ -186,6 +189,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AACB54024839F2A00C7949D /* TimeEvent */ = {
+			isa = PBXGroup;
+			children = (
+				2AACB54124839F7300C7949D /* LJTimeEventViewController.h */,
+				2AACB54224839F7300C7949D /* LJTimeEventViewController.m */,
+			);
+			path = TimeEvent;
+			sourceTree = "<group>";
+		};
 		2ABA2B3B2297CE00000BB3E4 /* Operation */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +274,7 @@
 		DD120A241E7A250600B984FA /* LJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2AACB54024839F2A00C7949D /* TimeEvent */,
 				2ACE5881245BED9300287BB7 /* Tips */,
 				2AF660C522F13E0E0041F0C1 /* LinkedList */,
 				2ABA2B3B2297CE00000BB3E4 /* Operation */,
@@ -584,6 +597,7 @@
 				DD21E90E1EB1EE8B0006DB6E /* LJCollectionTranViewController.m in Sources */,
 				DD120A5E1E7A29A700B984FA /* LJTextView.m in Sources */,
 				DD21E9181EB1F72F0006DB6E /* LJMagicMoveAnimation.m in Sources */,
+				2AACB54324839F7300C7949D /* LJTimeEventViewController.m in Sources */,
 				DD0C2CD71EBC6F3200FF1947 /* LJDynamicItem.m in Sources */,
 				DD21E9201EB2E1590006DB6E /* LJMagicMovePopAnimation.m in Sources */,
 				2AF660CB22F144FD0041F0C1 /* LJLinkedListViewController.m in Sources */,

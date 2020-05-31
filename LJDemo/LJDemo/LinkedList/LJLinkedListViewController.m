@@ -19,6 +19,9 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self changeStringToCharArray:@"qwertyuiopa"];
+    
+    NSLog(@"%@",NSStringFromClass([self class]));
+    NSLog(@"%@",NSStringFromClass([super class]));
 }
 
 /*
