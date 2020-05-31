@@ -17,6 +17,9 @@
 
 @interface LJTimeEventChildView : UIView
 @property (nonatomic, strong) NSMutableArray *drawArray; //用来标记占用几个cell
+@property (nonatomic, copy) NSString *timeString;
+
+@property (nonatomic, strong) UILabel *timeLabel;
 @end
 
 @implementation LJTimeEventChildView
@@ -24,8 +27,20 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.drawArray = [NSMutableArray array];
+        
+        self.timeLabel = [[UILabel alloc]initWithFrame:self.bounds];
+        self.timeLabel.font = [UIFont systemFontOfSize:13];
+        [self addSubview:self.timeLabel];
     }
     return self;
+}
+
+- (void)layoutSubviews {
+    self.timeLabel.frame = self.bounds;
+}
+
+- (void)setTimeString:(NSString *)timeString {
+    self.timeLabel.text = timeString;
 }
 @end
 
@@ -48,7 +63,9 @@
     self.numberDic = [NSMutableDictionary dictionary];
     
     [self.timeArray addObject:@"9:00-10:00"];
+    [self.timeArray addObject:@"9:00-11:00"];
     [self.timeArray addObject:@"9:00-12:00"];
+    [self.timeArray addObject:@"11:00-12:00"];
     [self.timeArray addObject:@"14:00-15:00"];
     
     for (NSString *timeString in self.timeArray) {
@@ -76,6 +93,7 @@
     for (int i = (int)startIndex; i < (int)endIndex; i++) {
         [childView.drawArray addObject:[NSNumber numberWithInt:i]];
     }
+    childView.timeString = timeString;
     [self.viewArray addObject:childView];
     [self setDrawNumberDisplayCount:childView];
     return childView;
@@ -123,15 +141,48 @@
             }
         }
         
-        CGFloat x = kStartX; //标记x坐标
         for (LJTimeEventChildView *childView in childArray) {
             CGRect frame = childView.frame;
-            
+            frame.size.width = width;
+            childView.frame = frame;
+        }
+    }
+    
+    //主要是为了顺序取出
+    NSMutableArray *frameArray = [NSMutableArray array]; //存储布局好的view
+    CGFloat x = kStartX;
+    for (int i = 0; i < kAllTHour; i++) {
+        NSNumber *number = [NSNumber numberWithInt:(i + kStartTime)];
+        NSMutableArray *childArray = self.numberDic[number];
+        
+        for (LJTimeEventChildView *childView in childArray) {
+            if ([frameArray containsObject:childView]) {
+                //判断是否已布局
+                continue;
+            }
+            CGRect frame = childView.frame;
+            frame.origin.x = x;
+            while ([self judgeRect:frame inArray:frameArray]) {
+                frame.origin.x = frame.origin.x + frame.size.width;
+            }
+            childView.frame = frame;
+            [frameArray addObject:childView];
         }
     }
     
 }
 
+//判断坐标是否被占用
+- (BOOL)judgeRect:(CGRect)rect inArray:(NSMutableArray *)frameArray {
+    BOOL isContain = NO;
+    for (LJTimeEventChildView *childView in frameArray) {
+        if (CGRectIntersectsRect(childView.frame, rect)) {
+            isContain = YES;
+            break;
+        }
+    }
+    return isContain;
+}
 
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
