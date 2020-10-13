@@ -28,7 +28,7 @@
 //    CGFloat yOffset = 0.0;
 //    CGFloat contentWidth = 0.0; // To determine the contentSize
 //    CGFloat contentHeight = 0.0; // To determine the contentSize
-//    
+//
 //    if (self.itemAttributes.count > 0) { // We don't enter in this if statement the first time, we enter the following times
 //        for (int section = 0; section < [self.collectionView numberOfSections]; section++) {
 //            NSUInteger numberOfItems = [self.collectionView numberOfItemsInSection:section];
@@ -41,7 +41,7 @@
 //                    CGRect frame = attributes.frame;
 //                    frame.origin.y = self.collectionView.contentOffset.y;
 //                    attributes.frame = frame;
-//                    
+//
 //                }
 //                if (index == 0) { // We stick the first column
 //                    CGRect frame = attributes.frame;
@@ -50,34 +50,34 @@
 //                }
 //            }
 //        }
-//        
+//
 //        return;
 //    }
-//    
+//
 //    // The following code is only executed the first time we prepare the layout
 //    self.itemAttributes = [@[] mutableCopy];
 //    self.itemsSize = [@[] mutableCopy];
-//    
+//
 //    // Tip: If we don't know the number of columns we can call the following method and use the NSUInteger object instead of the NUMBEROFCOLUMNS macro
 //    // NSUInteger numberOfItems = [self.collectionView numberOfItemsInSection:section];
-//    
+//
 //    // We calculate the item size of each column
 //    if (self.itemsSize.count != NUMBEROFCOLUMNS) {
 //        [self calculateItemsSize];
 //    }
-//    
+//
 //    // We loop through all items
 //    for (int section = 0; section < [self.collectionView numberOfSections]; section++) {
 //        NSMutableArray *sectionAttributes = [@[] mutableCopy];
 //        for (NSUInteger index = 0; index < NUMBEROFCOLUMNS; index++) {
 //            CGSize itemSize = [self.itemsSize[index] CGSizeValue];
-//            
+//
 //            // We create the UICollectionViewLayoutAttributes object for each item and add it to our array.
 //            // We will use this later in layoutAttributesForItemAtIndexPath:
 //            NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:section];
 //            UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
 //            attributes.frame = CGRectIntegral(CGRectMake(xOffset, yOffset, itemSize.width, itemSize.height));
-//            
+//
 //            if (section == 0 && index == 0) {
 //                attributes.zIndex = 1024; // Set this value for the first item (Sec0Row0) in order to make it visible over first column and first row
 //            } else if (section == 0 || index == 0) {
@@ -93,18 +93,18 @@
 //                frame.origin.x = self.collectionView.contentOffset.x;
 //                attributes.frame = frame; // Stick to the left
 //            }
-//            
+//
 //            [sectionAttributes addObject:attributes];
-//            
+//
 //            xOffset = xOffset+itemSize.width;
 //            column++;
-//            
+//
 //            // Create a new row if this was the last column
 //            if (column == NUMBEROFCOLUMNS) {
 //                if (xOffset > contentWidth) {
 //                    contentWidth = xOffset;
 //                }
-//                
+//
 //                // Reset values
 //                column = 0;
 //                xOffset = 0;
@@ -113,7 +113,7 @@
 //        }
 //        [self.itemAttributes addObject:sectionAttributes];
 //    }
-//    
+//
 //    // Get the last item to calculate the total height of the content
 //    UICollectionViewLayoutAttributes *attributes = [[self.itemAttributes lastObject] lastObject];
 //    contentHeight = attributes.frame.origin.y+attributes.frame.size.height;
@@ -215,6 +215,14 @@
                 UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
                 NSValue *value = self.itemsSize[index];
                 CGSize size = [value CGSizeValue];
+                
+                //第一行第一占两格
+//                if (index == 0 && section == 0) {
+//                    NSValue *otherValue = self.itemsSize[1];
+//                    CGSize otherSize = [otherValue CGSizeValue];
+//                    size.width = size.width + otherSize.width;
+//                }
+                
                 attributes.frame = CGRectMake(xOffset, yOffset, size.width, size.height);
                 
                 xOffset = xOffset + size.width;

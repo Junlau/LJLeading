@@ -35,7 +35,7 @@
             if (i == 0) {
                 if (j == 0) {
                     [rowArray addObject:@"Date"];
-                } else {
+                } else /*if (j != rows -1)*/ {
                     [rowArray addObject:[NSString stringWithFormat:@"%d号",j]];
                 }
             } else {
