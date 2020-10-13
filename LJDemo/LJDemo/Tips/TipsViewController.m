@@ -44,6 +44,10 @@
     
 }
 
+- (IBAction)buttonPressed:(id)sender {
+    NSLog(@"%f",[self getStatusBarHeight]);
+}
+
 #pragma mark - Lazying
 - (UILabel *)placeholderLabel {
     if (_placeholderLabel == nil) {
@@ -53,6 +57,16 @@
         [_placeholderLabel sizeToFit];
     }
     return _placeholderLabel;
+}
+
+- (CGFloat)getStatusBarHeight {
+    CGFloat statusBarHeight = 0.f;
+    if (@available(iOS 13.0, *)) {
+        statusBarHeight = [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager.statusBarFrame.size.height;
+    } else {
+        statusBarHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
+    }
+    return statusBarHeight;
 }
 
 #pragma mark - UITextViewDelegate
