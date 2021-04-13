@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface LJTimeEventViewController : UIViewController
 
+@property (copy, nonatomic) NSString *testCopyString;
+
 @end
 
 NS_ASSUME_NONNULL_END

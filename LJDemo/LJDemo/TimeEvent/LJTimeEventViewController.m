@@ -56,6 +56,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    /*strong修饰下的testCopyString，从上一个页面传值过来地址为变化，赋值后地址发生变化，上一个页面地址未变化，值也未变*/
+    /*copy修饰下与strong表现一致*/
+    
+    NSLog(@"%p",self.testCopyString);
+    NSLog(@"%@",self.testCopyString);
+    self.testCopyString = @"1234556";
+    NSLog(@"%@",self.testCopyString);
+    NSLog(@"%p",self.testCopyString);
+    
     [self.view addSubview:self.tableView];
     
     self.viewArray = [NSMutableArray array];

@@ -24,6 +24,8 @@
 @interface ViewController ()
 @property (strong, nonatomic) NSMutableArray *dataArray;
 
+@property (strong, nonatomic) NSString *testCopyString;
+
 @end
 
 @implementation ViewController
@@ -47,8 +49,16 @@
     -RAX 寄存器为函数返回值使用，不管你是用在用OC还是Swift。
     当使用$打印寄存器的时候，确认当前环境是OC。
     */
+    
+    
+    self.testCopyString = @"1234";
+    NSLog(@"%p",self.testCopyString);
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"%@",self.testCopyString);
+    NSLog(@"%p",self.testCopyString);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -125,6 +135,7 @@
         [self.navigationController pushViewController:tipsVC animated:YES];
     }else if (indexPath.row == 12) {
         LJTimeEventViewController *timeVC = [[LJTimeEventViewController alloc]init];
+        timeVC.testCopyString = self.testCopyString;
         [self.navigationController pushViewController:timeVC animated:YES];
     }
 }
