@@ -12,9 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let window = keywindows()
-        print(window ?? "1111")
+        self.view.backgroundColor = UIColor.red
         
     }
 
