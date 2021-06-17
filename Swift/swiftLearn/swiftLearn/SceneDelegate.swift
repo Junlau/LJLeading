@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         if let windowScene = scene as? UIWindowScene {
-            let viewController = ViewController()
+            let viewController = SLTabBarViewController()
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = viewController
             
