@@ -7,23 +7,41 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
-
+class HomeViewController: BaseViewController, BannerViewDelegate, BannerViewDataSource {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
-        // Do any additional setup after loading the view.
+        
+        let bannerView = BannerView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 176))
+        bannerView.dataSource = self
+        bannerView.delegate = self
+        bannerView.timeInterval = 2
+        bannerView.isAutoScroll = true
+        view.addSubview(bannerView)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func didSelectBannerView(_ bannerView: BannerView, index: Int) {
+        
     }
-    */
-
+    
+    func numberOfBanner(_ bannerView: BannerView) -> Int {
+        return 4
+    }
+    
+    func viewForBanner(_ bannerView: BannerView, index: Int, convertView: UIView?) -> UIView {
+        if let view = convertView as? UILabel {
+            view.text = String(index)
+            return view
+        } else {
+            let label = UILabel()
+            label.text = String(index)
+            label.font = UIFont.boldSystemFont(ofSize: 30)
+            label.textColor = UIColor.red
+            label.textAlignment = .center
+            return label
+        }
+    }
+    
 }
