@@ -20,6 +20,7 @@
 		4BC1350D267AEE16001E27D3 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC1350C267AEE16001E27D3 /* DiscoverViewController.swift */; };
 		4BC13515267AEE25001E27D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC13514267AEE25001E27D3 /* HomeViewController.swift */; };
 		4BC1351A267AF753001E27D3 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC13519267AF753001E27D3 /* BannerView.swift */; };
+		4BC13520267C38BC001E27D3 /* RequestManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC1351F267C38BC001E27D3 /* RequestManage.swift */; };
 		9166D4CA1BA22CCB6E6DE551 /* Pods_swiftLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F20F7CFA4ADD786E96D843 /* Pods_swiftLearn.framework */; };
 		A311AECEA559D4C6B27EE48F /* Pods_swiftLearn_swiftLearnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB5A65C1721E0364FD7DB16 /* Pods_swiftLearn_swiftLearnUITests.framework */; };
 		FAF6121AFB85510E1F82596F /* Pods_swiftLearnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247ACE8C664C5645B6B921D4 /* Pods_swiftLearnTests.framework */; };
@@ -66,6 +67,7 @@
 		4BC1350C267AEE16001E27D3 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		4BC13514267AEE25001E27D3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4BC13519267AF753001E27D3 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		4BC1351F267C38BC001E27D3 /* RequestManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManage.swift; sourceTree = "<group>"; };
 		56037E32DCE050BE40906FD1 /* Pods-swiftLearnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftLearnTests.debug.xcconfig"; path = "Target Support Files/Pods-swiftLearnTests/Pods-swiftLearnTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E2B571858C9D9199C281BEF /* Pods-swiftLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftLearn.release.xcconfig"; path = "Target Support Files/Pods-swiftLearn/Pods-swiftLearn.release.xcconfig"; sourceTree = "<group>"; };
 		D369D7A1529890201D15AECC /* Pods-swiftLearn-swiftLearnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftLearn-swiftLearnUITests.debug.xcconfig"; path = "Target Support Files/Pods-swiftLearn-swiftLearnUITests/Pods-swiftLearn-swiftLearnUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		4B35C16E26609A6700B700A3 /* swiftLearn */ = {
 			isa = PBXGroup;
 			children = (
+				4BC1351E267C3891001E27D3 /* Base */,
 				4BC134F1267AE498001E27D3 /* Model */,
 				4BC134F0267AE486001E27D3 /* Component */,
 				4BC134EF267AE44B001E27D3 /* ViewController */,
@@ -160,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				4B35C17326609A6800B700A3 /* ViewController.swift */,
-				4BC134F2267AE51A001E27D3 /* BaseViewController.swift */,
 				4BC13502267AE59D001E27D3 /* SLTabBarViewController.swift */,
 				4BC13507267AED98001E27D3 /* MineViewController.swift */,
 				4BC1350C267AEE16001E27D3 /* DiscoverViewController.swift */,
@@ -182,6 +184,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4BC1351E267C3891001E27D3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4BC134F2267AE51A001E27D3 /* BaseViewController.swift */,
+				4BC1351F267C38BC001E27D3 /* RequestManage.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		D402786095553ECFE0924949 /* Frameworks */ = {
@@ -448,6 +459,7 @@
 				4BC13508267AED98001E27D3 /* MineViewController.swift in Sources */,
 				4BC1350D267AEE16001E27D3 /* DiscoverViewController.swift in Sources */,
 				4BC13515267AEE25001E27D3 /* HomeViewController.swift in Sources */,
+				4BC13520267C38BC001E27D3 /* RequestManage.swift in Sources */,
 				4BC134F3267AE51A001E27D3 /* BaseViewController.swift in Sources */,
 				4BC1351A267AF753001E27D3 /* BannerView.swift in Sources */,
 				4B35C17026609A6800B700A3 /* AppDelegate.swift in Sources */,
