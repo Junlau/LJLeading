@@ -20,6 +20,7 @@
 #import "LJLinkedListViewController.h"
 #import "TipsViewController.h"
 #import "LJTimeEventViewController.h"
+#import "SLJViewController.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) NSMutableArray *dataArray;
@@ -39,7 +40,7 @@
     self.tableView.dataSource = self;
     
     self.dataArray = [NSMutableArray array];
-    [self.dataArray addObjectsFromArray:@[@"CoreText",@"CoreTextAsync",@"CollectionView",@"VCTransitioning",@"CollectionViewTransitioning",@"HashTable",@"ScrollViewInScrollView",@"Loading",@"BezierPath",@"Operation",@"DataStructure",@"TipsView",@"TimeEvent"]];
+    [self.dataArray addObjectsFromArray:@[@"CoreText",@"CoreTextAsync",@"CollectionView",@"VCTransitioning",@"CollectionViewTransitioning",@"HashTable",@"ScrollViewInScrollView",@"Loading",@"BezierPath",@"Operation",@"DataStructure",@"TipsView",@"TimeEvent",@"SLJ"]];
     
    /*
     LLDB 汇编调试 使用符号断点进入汇编：
@@ -137,6 +138,9 @@
         LJTimeEventViewController *timeVC = [[LJTimeEventViewController alloc]init];
         timeVC.testCopyString = self.testCopyString;
         [self.navigationController pushViewController:timeVC animated:YES];
+    }else if (indexPath.row == 13) {
+        SLJViewController *sljVC = [[SLJViewController alloc]init];
+        [self.navigationController pushViewController:sljVC animated:YES];
     }
 }
 

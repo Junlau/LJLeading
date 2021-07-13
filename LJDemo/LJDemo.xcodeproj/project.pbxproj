@@ -16,6 +16,10 @@
 		2AD87A6520E22620001DC745 /* LJPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD87A6420E22620001DC745 /* LJPathView.m */; };
 		2AF660CB22F144FD0041F0C1 /* LJLinkedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF660CA22F144FD0041F0C1 /* LJLinkedListViewController.m */; };
 		2AF660CE22F146110041F0C1 /* LinkedListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF660CD22F146110041F0C1 /* LinkedListModel.m */; };
+		4BC135AC269D2849001E27D3 /* SLJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC135AB269D2849001E27D3 /* SLJViewController.m */; };
+		4BC135B5269D28CA001E27D3 /* SLJPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC135B4269D28CA001E27D3 /* SLJPopView.m */; };
+		4BC135BC269D2E21001E27D3 /* SLJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC135BA269D2E21001E27D3 /* SLJTableViewCell.m */; };
+		4BC135BD269D2E21001E27D3 /* SLJTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BC135BB269D2E21001E27D3 /* SLJTableViewCell.xib */; };
 		4BF6AD0D233B4C14007E6994 /* LJProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6AD0C233B4C14007E6994 /* LJProxy.m */; };
 		DD0C2CD41EBC1F9700FF1947 /* LJSecondScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD31EBC1F9700FF1947 /* LJSecondScrollViewController.m */; };
 		DD0C2CD71EBC6F3200FF1947 /* LJDynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0C2CD61EBC6F3200FF1947 /* LJDynamicItem.m */; };
@@ -91,6 +95,13 @@
 		2AF660CA22F144FD0041F0C1 /* LJLinkedListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJLinkedListViewController.m; sourceTree = "<group>"; };
 		2AF660CC22F146110041F0C1 /* LinkedListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListModel.h; sourceTree = "<group>"; };
 		2AF660CD22F146110041F0C1 /* LinkedListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedListModel.m; sourceTree = "<group>"; };
+		4BC135AA269D2849001E27D3 /* SLJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLJViewController.h; sourceTree = "<group>"; };
+		4BC135AB269D2849001E27D3 /* SLJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLJViewController.m; sourceTree = "<group>"; };
+		4BC135B3269D28CA001E27D3 /* SLJPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLJPopView.h; sourceTree = "<group>"; };
+		4BC135B4269D28CA001E27D3 /* SLJPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLJPopView.m; sourceTree = "<group>"; };
+		4BC135B9269D2E21001E27D3 /* SLJTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLJTableViewCell.h; sourceTree = "<group>"; };
+		4BC135BA269D2E21001E27D3 /* SLJTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLJTableViewCell.m; sourceTree = "<group>"; };
+		4BC135BB269D2E21001E27D3 /* SLJTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SLJTableViewCell.xib; sourceTree = "<group>"; };
 		4BF6AD0B233B4C14007E6994 /* LJProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJProxy.h; sourceTree = "<group>"; };
 		4BF6AD0C233B4C14007E6994 /* LJProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJProxy.m; sourceTree = "<group>"; };
 		DD0C2CD21EBC1F9700FF1947 /* LJSecondScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSecondScrollViewController.h; sourceTree = "<group>"; };
@@ -250,6 +261,20 @@
 			path = LinkedList;
 			sourceTree = "<group>";
 		};
+		4BC135A9269D2818001E27D3 /* SLJ */ = {
+			isa = PBXGroup;
+			children = (
+				4BC135AA269D2849001E27D3 /* SLJViewController.h */,
+				4BC135AB269D2849001E27D3 /* SLJViewController.m */,
+				4BC135B3269D28CA001E27D3 /* SLJPopView.h */,
+				4BC135B4269D28CA001E27D3 /* SLJPopView.m */,
+				4BC135B9269D2E21001E27D3 /* SLJTableViewCell.h */,
+				4BC135BA269D2E21001E27D3 /* SLJTableViewCell.m */,
+				4BC135BB269D2E21001E27D3 /* SLJTableViewCell.xib */,
+			);
+			path = SLJ;
+			sourceTree = "<group>";
+		};
 		DD120A191E7A250600B984FA = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +299,7 @@
 		DD120A241E7A250600B984FA /* LJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4BC135A9269D2818001E27D3 /* SLJ */,
 				2AACB54024839F2A00C7949D /* TimeEvent */,
 				2ACE5881245BED9300287BB7 /* Tips */,
 				2AF660C522F13E0E0041F0C1 /* LinkedList */,
@@ -540,6 +566,7 @@
 				DD21E9131EB1F33A0006DB6E /* LJCollectionViewCell.xib in Resources */,
 				DD120A321E7A250700B984FA /* Assets.xcassets in Resources */,
 				2ACE5886245BEE2A00287BB7 /* TipsViewController.xib in Resources */,
+				4BC135BD269D2E21001E27D3 /* SLJTableViewCell.xib in Resources */,
 				DD45FDA51EA89A190037018A /* ContentCollectionViewCell.xib in Resources */,
 				DD120A301E7A250600B984FA /* Main.storyboard in Resources */,
 			);
@@ -567,7 +594,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD21E9091EB1BFD20006DB6E /* SwipeLeftInteractiveTransition.m in Sources */,
+				4BC135BC269D2E21001E27D3 /* SLJTableViewCell.m in Sources */,
 				4BF6AD0D233B4C14007E6994 /* LJProxy.m in Sources */,
+				4BC135AC269D2849001E27D3 /* SLJViewController.m in Sources */,
 				2ACE5885245BEE2A00287BB7 /* TipsViewController.m in Sources */,
 				DDEC4D1C1EB091B4003AD964 /* LJModalViewController.m in Sources */,
 				DD45FD9C1EA893BB0037018A /* LJCollectionViewController.m in Sources */,
@@ -590,6 +619,7 @@
 				DD21E91C1EB1F9330006DB6E /* LJTranSecondViewController.m in Sources */,
 				2AD87A6220E2224F001DC745 /* LJBezierViewController.m in Sources */,
 				DD120A2A1E7A250600B984FA /* AppDelegate.m in Sources */,
+				4BC135B5269D28CA001E27D3 /* SLJPopView.m in Sources */,
 				DD120A271E7A250600B984FA /* main.m in Sources */,
 				DD45FDA41EA89A190037018A /* ContentCollectionViewCell.m in Sources */,
 				DD21E9121EB1F33A0006DB6E /* LJCollectionViewCell.m in Sources */,
