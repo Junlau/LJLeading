@@ -18,21 +18,19 @@ class SLTabBarViewController: UITabBarController {
     func initViewController() {
         let homeTabBar = UITabBarItem(title: "首页", image:  UIImage(named: "home"), selectedImage: UIImage(named: "home-select"))
         let homeVC = HomeViewController()
-        let homeNav = UINavigationController(rootViewController: homeVC)
+        let homeNav = BaseNavigationViewController(rootViewController: homeVC)
         homeNav.tabBarItem = homeTabBar
         
         let discoverTabBar = UITabBarItem(title: "发现", image:  UIImage(named: "discover"), selectedImage: UIImage(named: "discover-select"))
         let discoverVC =  DiscoverViewController()
-        let discoverNav = UINavigationController(rootViewController: discoverVC)
+        let discoverNav = BaseNavigationViewController(rootViewController: discoverVC)
         discoverNav.tabBarItem = discoverTabBar
         
         let mineTabBar = UITabBarItem(title: "我的", image:  UIImage(named: "mine"), selectedImage: UIImage(named: "mine-select"))
         let mineVC =  MineViewController()
-        let mineNav = UINavigationController(rootViewController: mineVC)
+        let mineNav = BaseNavigationViewController(rootViewController: mineVC)
         mineNav.tabBarItem = mineTabBar
         
         self.setViewControllers([homeNav,discoverNav,mineNav], animated: true)
     }
-    
-
 }

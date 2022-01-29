@@ -44,4 +44,6 @@ class HomeViewController: BaseViewController, BannerViewDelegate, BannerViewData
         }
     }
     
+    
+    
 }
