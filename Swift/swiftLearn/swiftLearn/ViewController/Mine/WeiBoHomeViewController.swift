@@ -43,6 +43,8 @@ class WeiBoHomeViewController: BaseViewController, UIGestureRecognizerDelegate, 
         return view
     }()
     
+    var isClick = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.title = "微博"
@@ -74,22 +76,68 @@ class WeiBoHomeViewController: BaseViewController, UIGestureRecognizerDelegate, 
         gzButton.setTitle("关注", for: UIControl.State.normal)
         gzButton.addTarget(self, action:#selector(gzButtonPressed(button:)), for: UIControl.Event.touchUpInside)
         gzButton.sizeToFit()
+        gzButton.frame = CGRect(x: 10, y: (44-gzButton.frame.size.width)/2, width: gzButton.frame.size.width, height: gzButton.frame.size.height)
+        gzButton.tag = 100
         titleView.addSubview(gzButton)
+        
+        let tjButton = UIButton()
+        tjButton.setTitle("推荐", for: UIControl.State.normal)
+        tjButton.addTarget(self, action:#selector(tjButtonPressed(button:)), for: UIControl.Event.touchUpInside)
+        tjButton.sizeToFit()
+        tjButton.frame = CGRect(x: gzButton.frame.maxX + 10, y: (44-gzButton.frame.size.width)/2, width: gzButton.frame.size.width, height: gzButton.frame.size.height)
+        tjButton.tag = 101
+        titleView.addSubview(tjButton)
+        
+        self.lineView.frame = CGRect(x: gzButton.frame.minX, y: gzButton.frame.maxY, width: gzButton.frame.size.width, height: 4);
+        titleView.addSubview(self.lineView)
         return titleView
     }
     
     @objc func gzButtonPressed(button:UIButton) {
-        
+        self.isClick = true
+        self.bgScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+        UIView.animate(withDuration: 0.5) {
+            self.lineView.frame = CGRect(x: button.frame.minX, y: button.frame.maxY, width: button.frame.size.width, height: self.lineView.frame.height)
+        } completion: { (finish) in
+
+        }
+        print("111")
     }
     
-    /*
-    // MARK: - Navigation
+    @objc func tjButtonPressed(button:UIButton) {
+        self.isClick = true
+        self.bgScrollView.setContentOffset(CGPoint(x: self.view.frame.size.width, y: 0), animated: true)
+        UIView.animate(withDuration: 0.5) {
+            self.lineView.frame = CGRect(x: button.frame.minX, y: button.frame.maxY, width: button.frame.size.width, height: self.lineView.frame.height)
+        } completion: { (finish) in
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        }
+        print("222")
     }
-    */
-
+    
+    func scrollLineViewAnimate() {
+        let gzButton = self.navigationItem.titleView?.viewWithTag(100)
+        let tjButton = self.navigationItem.titleView?.viewWithTag(101)
+        let width = self.view.frame.width
+        let lineMaxWith = tjButton!.frame.minX - gzButton!.frame.minX
+        
+        if self.bgScrollView.contentOffset.x <= width/2 {
+            let detal = self.bgScrollView.contentOffset.x * lineMaxWith / (width/2)
+            self.lineView.frame = CGRect(x: gzButton!.frame.minX, y: gzButton!.frame.maxY, width: gzButton!.frame.size.width + detal, height: self.lineView.frame.height)
+        } else {
+            let detal = (self.bgScrollView.contentOffset.x - width/2) * lineMaxWith / (width/2)
+            self.lineView.frame = CGRect(x: gzButton!.frame.minX + detal, y: gzButton!.frame.maxY, width: tjButton!.frame.maxX - gzButton!.frame.minX - detal, height: self.lineView.frame.height)
+        }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView == self.bgScrollView {
+            if !self.isClick {
+                self.scrollLineViewAnimate()
+            }
+            if self.bgScrollView.contentOffset.x == 0 || self.bgScrollView.contentOffset.x == self.view.frame.size.width {
+                self.isClick = false
+            }
+        }
+    }
 }
